@@ -1,0 +1,16 @@
+
+.button {
+	padding: calc(#{$lh}/2.5 - 2px);
+	border: 2px solid $black;
+	
+	text-transform: uppercase;
+	font-weight: 600;
+
+	&:hover {
+		color: $white;
+		background: rgba($black, 0.95);
+	}
+	&:active {
+		background: $black;
+	}
+}

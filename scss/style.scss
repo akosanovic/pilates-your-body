@@ -1,3 +1,10 @@
-body {
-	background: red;
-}
+@import "compass/css3";
+
+@import "fonts";
+@import "variables";
+@import "main-style";
+
+
+@import "button";
+@import "header";
+@import "parallex";

@@ -1,4 +1,125 @@
-/* line 1, ../scss/style.scss */
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./fonts/montserrat-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-v12-latin-regular.woff2") format("woff2"), url("./fonts/montserrat-v12-latin-regular.woff") format("woff"), url("./fonts/montserrat-v12-latin-regular.ttf") format("truetype"), url("./fonts/montserrat-v12-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/montserrat-v12-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("./fonts/montserrat-v12-latin-600.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-v12-latin-600.woff2") format("woff2"), url("./fonts/montserrat-v12-latin-600.woff") format("woff"), url("./fonts/montserrat-v12-latin-600.ttf") format("truetype"), url("./fonts/montserrat-v12-latin-600.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* line 2, ../scss/_main-style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../scss/_main-style.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 8, ../scss/_main-style.scss */
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../scss/_main-style.scss */
 body {
-  background: red;
+  line-height: 1.7rem;
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+/* line 20, ../scss/_main-style.scss */
+ul, li {
+  -webkit-padding-start: 0;
+}
+
+/* line 24, ../scss/_main-style.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 2, ../scss/_button.scss */
+.button {
+  padding: calc(1.7rem/2.5 - 2px);
+  border: 2px solid #333;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 9, ../scss/_button.scss */
+.button:hover {
+  color: #fff;
+  background: rgba(51, 51, 51, 0.95);
+}
+/* line 13, ../scss/_button.scss */
+.button:active {
+  background: #333;
+}
+
+/* line 2, ../scss/_header.scss */
+.header {
+  -moz-box-shadow: 0px 5px 5px 0px rgba(100, 100, 100, 0.1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(100, 100, 100, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(100, 100, 100, 0.1);
+  padding-top: 1.7rem;
+}
+/* line 5, ../scss/_header.scss */
+.header .logo {
+  margin: 0 auto;
+  display: block;
+  width: 5.1rem;
+  height: 5.1rem;
+  overflow: hidden;
+}
+/* line 11, ../scss/_header.scss */
+.header .logo img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+/* line 20, ../scss/_header.scss */
+.nav {
+  text-align: center;
+}
+/* line 22, ../scss/_header.scss */
+.nav .nav-list {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 25, ../scss/_header.scss */
+.nav .nav-list .nav-li {
+  display: inline-block;
+  padding: 0.85rem;
+  text-transform: uppercase;
+  color: #646464;
+}
+/* line 30, ../scss/_header.scss */
+.nav .nav-list .nav-li:hover {
+  color: #333;
+}
+
+/* line 1, ../scss/_parallex.scss */
+.parallex {
+  padding: 1.7rem 0;
+}
+/* line 3, ../scss/_parallex.scss */
+.parallex .logo {
+  display: block;
+  width: 100%;
+  height: auto;
 }

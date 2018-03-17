@@ -1,0 +1,27 @@
+
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+body, p, ul {
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	line-height: $lh;
+	color: $black;
+	font-family: $ff;
+	font-size: $fs;
+}
+
+ul, li {	
+    -webkit-padding-start: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

@@ -1,0 +1,35 @@
+
+.header {
+	@include box-shadow (0px 5px 5px 0px rgba($grey, 0.1));
+	padding-top: $lh;
+	.logo {
+		margin: 0 auto; 
+		display: block;
+		width: $lh*3;
+		height: $lh*3;
+		overflow: hidden;
+		img {
+			display: block;
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+
+.nav {
+	text-align: center;
+	.nav-list {
+		list-style-type: none;
+		display: inline-block;
+		.nav-li {
+			display: inline-block;
+			padding: $lh/2;
+			text-transform: uppercase;
+			color: $grey;
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+}
