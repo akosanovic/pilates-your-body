@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 360 360" style="enable-background:new 0 0 360 360;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#181716;}
+	.st1{fill:none;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Montserrat'; font-weight: 400;}
+	.st4{font-size:54px;}
+	.st5{letter-spacing:-1;}
+	.st6{fill:#9C9C9C;}
+	.st7{font-family:'Montserrat';  font-weight: 600;}
+	.st8{font-size:55px;}
+	.st9{fill:none;stroke:#9C9C9C;stroke-width:4; stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+</g>
+<g id="Layer_2">
+	<circle id="XMLID_7_" class="st0" cx="180" cy="180" r="180"/>
+	<rect id="XMLID_8_" x="63.3" y="96.2" class="st1" width="233.5" height="47"/>
+	<text id="XMLID_12_" transform="matrix(1 0 0 1 63.25 136.2341)" class="st2 st3 st4 st5">PILATES</text>
+	<rect id="XMLID_13_" x="97.5" y="162.7" class="st1" width="165" height="47.5"/>
+	<text id="XMLID_14_" transform="matrix(1 0 0 1 97.5 203.4762)" class="st6 st7 st8 st5">YOUR</text>
+	<rect id="XMLID_16_" x="97.3" y="228.7" class="st1" width="165.5" height="47"/>
+	<text id="XMLID_15_" transform="matrix(1 0 0 1 97.25 268.734)" class="st2 st3 st4">BODY</text>
+	<line id="XMLID_17_" class="st9" x1="137" y1="54.7" x2="222" y2="54.7"/>
+	<line id="XMLID_18_" class="st9" x1="137" y1="311.7" x2="222" y2="311.7"/>
+</g>
+</svg>
