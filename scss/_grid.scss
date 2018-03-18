@@ -1,0 +1,27 @@
+
+
+.row {
+	@extend .clearfix;
+	margin-left: -$lh/2;
+	margin-right: -$lh/2;
+}
+
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5,
+.col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10 {
+	float: left;
+	padding-left: $lh/2; 
+	padding-right: $lh/2;
+	height: 100%;
+} 
+.col-lg-2 {
+	width: calc(2 / 12 * 100%);
+}
+.col-lg-3 {
+	width: calc(3 / 12 * 100%);
+}
+.col-lg-9 {
+	width: calc(9 / 12 * 100%);
+}
+.col-lg-10 {
+	width: calc(10 / 12 * 100%);
+} 

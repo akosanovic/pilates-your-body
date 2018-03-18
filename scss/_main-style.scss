@@ -10,17 +10,27 @@ body, p, ul, h1, h2 {
 	padding: 0;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
+
 }
 body {	
 	line-height: $lh;
 	color: $black;
 	font-family: $ff;
 	font-size: $fs;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
 	font-size: $lh;
 	line-height: 1.7;
+}
+h2 {
+	font-size: 18px;
+	line-height: $lh;
+	text-transform: uppercase;
 }
 
 ul, li {	
@@ -32,6 +42,28 @@ a {
 	color: inherit;
 }
 
+.clearfix {
+	@include clearfix;
+	height: 100%;
+
+	display: table;
+	&:before ,
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.position-relative {
+	position: relative;
+	height: 100%;
+}
+
+.v-center {
+	position: absolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
 
 .text-center {
 	text-align: center;
