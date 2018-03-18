@@ -11,21 +11,40 @@
 
 .card-floating {
 	min-height: $lh*16;
+	padding: $lh*2;
+	margin-bottom: $lh*4;
 	@include box-shadow (0px 3px 6px 3px $grey-light);
 	
-	background-position: right bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
-	padding: $lh*2;
-	&.made-for-you {
-		background-image: url('../images/made-for-you.jpg');			
+	background-position: right bottom;	
+
+	&:nth-child(2) {
+		background-color: $grey-light;
+		background-position: left bottom;
 	}
-	.card-image {
-		width: 100%;
-		height: auto;
-		img {
-			display: block;
-			width: 100%;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.made-for-you {
+		background-image: url('../images/made-for-you.jpg');		
+	}
+	&.high-intensity {
+		background-image: url('../images/high-intensity.jpg');
+		
+	}
+	&.body-sculpting {
+		background-image: url('../images/body-sculpting.jpg')
+	}
+
+
+	.card-description {
+		p {
+			padding-bottom: $lh/2;
+			text-align: justify;
+			&:last-child {
+				padding-bottom: 0;
+			}
 		}
 	}
 }
