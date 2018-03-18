@@ -9,7 +9,13 @@
 	padding-top: $lh;
 	background: $white;
 	@include box-shadow (0px 3px 6px 3px rgba($grey-light, 0.5));
+	@include transition(all 1s linear);
 	
+
+	@media screen and (max-width: $s-screen) {
+		padding-top: $lh/2;
+		text-align: center;
+	}
 	.logo {
 		margin: 0 auto; 
 		display: block;
@@ -20,6 +26,20 @@
 			display: block;
 			height: 100%;
 			width: auto;
+		}
+		@media screen and (max-width: $s-screen) {
+			position: relative;
+			display: inline-block;
+			@include transition(all 1s linear);
+
+			height: auto;
+			overflow: visible;
+			img {
+				position: absolute;
+				top: 100%;
+				@include transform(translateY(-50%));
+				height: $lh*3;
+			}
 		}
 	}
 }
@@ -39,5 +59,8 @@
 				color: $black;
 			}
 		}
+	}
+	@media screen and (max-width: $s-screen) {
+		display: inline-block;
 	}
 }
