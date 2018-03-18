@@ -38,6 +38,10 @@
 		background-image: url('../images/body-sculpting.jpg')
 	}
 
+	@media screen and (max-width: $s-screen) {
+		background-image: unset !important;
+	}
+
 
 	.card-description {
 		p {
