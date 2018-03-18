@@ -39,7 +39,12 @@
 	}
 
 	@media screen and (max-width: $s-screen) {
+		padding: 0;
 		background-image: unset !important;
+		.card-description {
+			padding: $lh*2;
+			text-align: center;
+		}
 	}
 
 

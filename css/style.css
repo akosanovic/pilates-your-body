@@ -217,19 +217,25 @@ a {
 @media screen and (max-width: 600px) {
   /* line 13, ../scss/_main-layout.scss */
   .card-floating {
+    padding: 0;
     background-image: unset !important;
   }
+  /* line 44, ../scss/_main-layout.scss */
+  .card-floating .card-description {
+    padding: 3.4rem;
+    text-align: center;
+  }
 }
-/* line 47, ../scss/_main-layout.scss */
+/* line 52, ../scss/_main-layout.scss */
 .card-floating .card-description p {
   padding-bottom: 0.85rem;
   text-align: justify;
 }
-/* line 50, ../scss/_main-layout.scss */
+/* line 55, ../scss/_main-layout.scss */
 .card-floating .card-description p:last-child {
   padding-bottom: 0;
 }
-/* line 55, ../scss/_main-layout.scss */
+/* line 60, ../scss/_main-layout.scss */
 .card-floating img {
   width: 100%;
   height: auto;
