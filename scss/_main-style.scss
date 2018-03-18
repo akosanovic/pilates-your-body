@@ -74,3 +74,10 @@ a {
 .highlighted-background {
 	background-color: $grey-light;
 }
+
+.mobile-only {
+	display: none;
+	@media screen and (max-width: $s-screen) {
+		display: block;
+	}
+}

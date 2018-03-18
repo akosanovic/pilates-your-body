@@ -158,6 +158,17 @@ a {
   background-color: #f5f5f5;
 }
 
+/* line 78, ../scss/_main-style.scss */
+.mobile-only {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  /* line 78, ../scss/_main-style.scss */
+  .mobile-only {
+    display: block;
+  }
+}
+
 /* line 2, ../scss/_main-layout.scss */
 .banner {
   padding: 3.4rem 0;
@@ -217,6 +228,11 @@ a {
 /* line 50, ../scss/_main-layout.scss */
 .card-floating .card-description p:last-child {
   padding-bottom: 0;
+}
+/* line 55, ../scss/_main-layout.scss */
+.card-floating img {
+  width: 100%;
+  height: auto;
 }
 
 /* line 2, ../scss/_button.scss */
