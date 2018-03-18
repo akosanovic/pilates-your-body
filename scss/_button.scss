@@ -1,8 +1,11 @@
 
 .button {
-	padding: calc(#{$lh}/2.5 - 2px);
+	display: inline-block;
+	padding: calc(#{$lh}/3 - 2px) calc(#{$lh} - 2px) ;
 	border: 2px solid $black;
-	
+	margin-top: $lh;
+
+	background: $white;
 	text-transform: uppercase;
 	font-weight: 600;
 
