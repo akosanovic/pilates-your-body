@@ -1,11 +1,15 @@
 
-
 .row {
 	@extend .clearfix;
 	margin-left: -$lh/2;
 	margin-right: -$lh/2;
+	@media screen and (max-width: $m-screen + 1) { 
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
-@media screen and (min-width: $l-screen) {
+
+@media screen and (min-width: $m-screen + 1) { 
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5,
 	.col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10 {
 		float: left;

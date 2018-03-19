@@ -38,8 +38,10 @@
 		background-image: url('../images/body-sculpting.jpg')
 	}
 
-	@media screen and (max-width: $s-screen) {
+	@media screen and (max-width: $m-screen) {
 		padding: 0;
+		max-width: 100%;
+		@include box-shadow(unset);
 		background-image: unset !important;
 		.card-description {
 			padding: $lh*2;
@@ -49,6 +51,9 @@
 
 
 	.card-description {
+		@media screen and (min-width: $m-screen) and (max-width: $l-screen) {
+			font-size: $fs*0.875;
+		}
 		p {
 			padding-bottom: $lh/2;
 			text-align: justify;
@@ -60,5 +65,8 @@
 	img {
 		width: 100%;
 		height: auto;
+		@media screen and (min-width: $l-screen) {
+			display: none;
+		}
 	}
 }

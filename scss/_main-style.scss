@@ -31,6 +31,7 @@ h2 {
 	font-size: 18px;
 	line-height: $lh;
 	text-transform: uppercase;
+	margin-bottom: $lh; 
 }
 
 ul, li {	
@@ -75,8 +76,10 @@ a {
 	background-color: $grey-light;
 }
 
-.mobile-only {
-	display: none;
+
+
+
+.display-s-screen {
 	@media screen and (max-width: $s-screen) {
 		display: block;
 	}
