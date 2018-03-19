@@ -1,0 +1,33 @@
+
+
+.contact {
+	background-color: $grey-light;
+	@media screen and (max-width: $s-screen) {
+		padding: 0  $lh;
+	}
+	.address { 
+		font-size: $fs * 0.929; //13px;
+	}
+	.input-newsletter {
+		display: block;
+	}
+
+	.social-media-list {
+		.social-media-button {
+			display: inline-block;
+			height: $lh*2;
+			width: $lh*2;
+			overflow: hidden;
+			img {
+				display: block;
+				height: 100%;
+				width: auto;
+			}
+		}
+	}
+}
+.copyright { 
+	font-size: $fs * 0.857; //12px
+	padding: $lh 0;
+}
+

@@ -84,3 +84,14 @@ a {
 		display: block;
 	}
 }
+.hide-s-screen {
+	@media screen and (max-width: $s-screen) {
+		display: none;
+	}
+}
+.show-s-screen {
+	display: none;
+	@media screen and (max-width: $s-screen) {
+		display: block;
+	}
+}

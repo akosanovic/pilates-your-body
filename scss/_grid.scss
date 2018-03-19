@@ -1,5 +1,6 @@
 
 .row {
+	width: 100%;	
 	@extend .clearfix;
 	margin-left: -$lh/2;
 	margin-right: -$lh/2;
@@ -29,10 +30,73 @@
 	.col-lg-4 {
 		width: calc(4 / 12 * 100%);
 	}
+	.col-lg-5 {
+		width: calc(5 / 12 * 100%);
+	}
+	.col-lg-6 {
+		width: calc(6 / 12 * 100%);
+	}
+	.col-lg-7 {
+		width: calc(7 / 12 * 100%);
+	}
 	.col-lg-9 {
 		width: calc(9 / 12 * 100%);
 	}
 	.col-lg-10 {
 		width: calc(10 / 12 * 100%);
+	} 
+}
+
+
+@media screen and (min-width: $s-screen + 1) { 
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,
+	.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10 {
+		float: left;
+		padding-left: $lh/2; 
+		padding-right: $lh/2;
+		height: 100%;
+		&.end {
+			float: right;
+		}
+	} 
+	.col-md-2 {
+		width: calc(2 / 12 * 100%);
+	}
+	.col-md-3 {
+		width: calc(3 / 12 * 100%);
+	}
+	.col-md-4 {
+		width: calc(4 / 12 * 100%);
+	}
+	.col-md-5 {
+		width: calc(5 / 12 * 100%);
+	}
+	.col-md-6 {
+		width: calc(6 / 12 * 100%);
+	}
+	.col-md-7 {
+		width: calc(7 / 12 * 100%);
+	}
+	.col-md-9 {
+		width: calc(9 / 12 * 100%);
+	}
+	.col-md-10 {
+		width: calc(10 / 12 * 100%);
+	} 
+}
+
+@media screen and (max-width: $s-screen) {
+	[class^="col-sm-"],
+	[class*='col-sm'] {
+		float: left;
+		margin-bottom: $lh*2;
+		padding-left: $lh/2; 
+		padding-right: $lh/2;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.col-sm-6 {
+		width: calc(6 / 12 * 100%);
 	} 
 }

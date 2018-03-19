@@ -1,0 +1,22 @@
+
+input {
+	border: 2px solid $black;
+	padding: calc(1.7rem/3 - 2px) calc(1.7rem - 2px); 
+	max-width: 100%;
+
+	line-height: $lh;
+	font-family: $ff;
+	color: $black;
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: $grey;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color:  $grey;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: $grey;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: $grey;
+	}
+}

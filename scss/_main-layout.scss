@@ -1,72 +1,19 @@
 
+
+
 .banner {
 	padding: $lh*2 0;
 }
-
-
 .about {
-	max-width: 1100px;
 	margin: 0 auto;
 	padding: $lh*2 0;
+	max-width: 1100px;
 }
-
-.card-floating {
-	min-height: $lh*16;
-	padding: $lh*2;
-	margin-bottom: $lh*4;
-	@include box-shadow (0px 3px 6px 3px $grey-light);
-	
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right bottom;	
-
-	&:nth-child(2) {
-		background-color: $grey-light;
-		background-position: left bottom;
-	}
-	&:last-child {
-		margin-bottom: 0;
-	}
-	&.made-for-you {
-		background-image: url('../images/made-for-you.jpg');		
-	}
-	&.high-intensity {
-		background-image: url('../images/high-intensity.jpg');
-		
-	}
-	&.body-sculpting {
-		background-image: url('../images/body-sculpting.jpg')
-	}
-
-	@media screen and (max-width: $m-screen) {
-		padding: 0;
-		max-width: 100%;
-		@include box-shadow(unset);
-		background-image: unset !important;
-		.card-description {
-			padding: $lh*2;
-			text-align: center;
-		}
-	}
-
-
-	.card-description {
-		@media screen and (min-width: $m-screen) and (max-width: $l-screen) {
-			font-size: $fs*0.875;
-		}
-		p {
-			padding-bottom: $lh/2;
-			text-align: justify;
-			&:last-child {
-				padding-bottom: 0;
-			}
-		}
-	}
-	img {
-		width: 100%;
-		height: auto;
-		@media screen and (min-width: $l-screen) {
-			display: none;
-		}
+.contact-layout{ 
+	margin: 0 auto;
+	padding: $lh*2 0;
+	max-width: 1100px;
+	@media screen and (max-width: $s-screen) {
+		padding: $lh 0;
 	}
 }

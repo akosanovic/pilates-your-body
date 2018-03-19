@@ -20,6 +20,7 @@
 }
 /* line 2, ../scss/_grid.scss */
 .row {
+  width: 100%;
   margin-left: -0.85rem;
   margin-right: -0.85rem;
 }
@@ -32,7 +33,7 @@
 }
 
 @media screen and (min-width: 1001px) {
-  /* line 13, ../scss/_grid.scss */
+  /* line 14, ../scss/_grid.scss */
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5,
   .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10 {
     float: left;
@@ -40,35 +41,125 @@
     padding-right: 0.85rem;
     height: 100%;
   }
-  /* line 19, ../scss/_grid.scss */
+  /* line 20, ../scss/_grid.scss */
   .col-lg-1.end, .col-lg-2.end, .col-lg-3.end, .col-lg-4.end, .col-lg-5.end,
   .col-lg-6.end, .col-lg-7.end, .col-lg-8.end, .col-lg-9.end, .col-lg-10.end {
     float: right;
   }
 
-  /* line 23, ../scss/_grid.scss */
+  /* line 24, ../scss/_grid.scss */
   .col-lg-2 {
     width: calc(2 / 12 * 100%);
   }
 
-  /* line 26, ../scss/_grid.scss */
+  /* line 27, ../scss/_grid.scss */
   .col-lg-3 {
     width: calc(3 / 12 * 100%);
   }
 
-  /* line 29, ../scss/_grid.scss */
+  /* line 30, ../scss/_grid.scss */
   .col-lg-4 {
     width: calc(4 / 12 * 100%);
   }
 
-  /* line 32, ../scss/_grid.scss */
+  /* line 33, ../scss/_grid.scss */
+  .col-lg-5 {
+    width: calc(5 / 12 * 100%);
+  }
+
+  /* line 36, ../scss/_grid.scss */
+  .col-lg-6 {
+    width: calc(6 / 12 * 100%);
+  }
+
+  /* line 39, ../scss/_grid.scss */
+  .col-lg-7 {
+    width: calc(7 / 12 * 100%);
+  }
+
+  /* line 42, ../scss/_grid.scss */
   .col-lg-9 {
     width: calc(9 / 12 * 100%);
   }
 
-  /* line 35, ../scss/_grid.scss */
+  /* line 45, ../scss/_grid.scss */
   .col-lg-10 {
     width: calc(10 / 12 * 100%);
+  }
+}
+@media screen and (min-width: 601px) {
+  /* line 52, ../scss/_grid.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,
+  .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10 {
+    float: left;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    height: 100%;
+  }
+  /* line 58, ../scss/_grid.scss */
+  .col-md-1.end, .col-md-2.end, .col-md-3.end, .col-md-4.end, .col-md-5.end,
+  .col-md-6.end, .col-md-7.end, .col-md-8.end, .col-md-9.end, .col-md-10.end {
+    float: right;
+  }
+
+  /* line 62, ../scss/_grid.scss */
+  .col-md-2 {
+    width: calc(2 / 12 * 100%);
+  }
+
+  /* line 65, ../scss/_grid.scss */
+  .col-md-3 {
+    width: calc(3 / 12 * 100%);
+  }
+
+  /* line 68, ../scss/_grid.scss */
+  .col-md-4 {
+    width: calc(4 / 12 * 100%);
+  }
+
+  /* line 71, ../scss/_grid.scss */
+  .col-md-5 {
+    width: calc(5 / 12 * 100%);
+  }
+
+  /* line 74, ../scss/_grid.scss */
+  .col-md-6 {
+    width: calc(6 / 12 * 100%);
+  }
+
+  /* line 77, ../scss/_grid.scss */
+  .col-md-7 {
+    width: calc(7 / 12 * 100%);
+  }
+
+  /* line 80, ../scss/_grid.scss */
+  .col-md-9 {
+    width: calc(9 / 12 * 100%);
+  }
+
+  /* line 83, ../scss/_grid.scss */
+  .col-md-10 {
+    width: calc(10 / 12 * 100%);
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 89, ../scss/_grid.scss */
+  [class^="col-sm-"],
+  [class*='col-sm'] {
+    float: left;
+    margin-bottom: 3.4rem;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+  /* line 95, ../scss/_grid.scss */
+  [class^="col-sm-"]:last-child,
+  [class*='col-sm']:last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 99, ../scss/_grid.scss */
+  .col-sm-6 {
+    width: calc(6 / 12 * 100%);
   }
 }
 /* line 2, ../scss/_main-style.scss */
@@ -173,91 +264,46 @@ a {
   }
 }
 
-/* line 2, ../scss/_main-layout.scss */
+@media screen and (max-width: 600px) {
+  /* line 87, ../scss/_main-style.scss */
+  .hide-s-screen {
+    display: none;
+  }
+}
+
+/* line 92, ../scss/_main-style.scss */
+.show-s-screen {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  /* line 92, ../scss/_main-style.scss */
+  .show-s-screen {
+    display: block;
+  }
+}
+
+/* line 4, ../scss/_main-layout.scss */
 .banner {
   padding: 3.4rem 0;
 }
 
 /* line 7, ../scss/_main-layout.scss */
 .about {
-  max-width: 1100px;
   margin: 0 auto;
   padding: 3.4rem 0;
+  max-width: 1100px;
 }
 
-/* line 13, ../scss/_main-layout.scss */
-.card-floating {
-  min-height: 27.2rem;
-  padding: 3.4rem;
-  margin-bottom: 6.8rem;
-  -moz-box-shadow: 0px 3px 6px 3px #f5f5f5;
-  -webkit-box-shadow: 0px 3px 6px 3px #f5f5f5;
-  box-shadow: 0px 3px 6px 3px #f5f5f5;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+/* line 12, ../scss/_main-layout.scss */
+.contact-layout {
+  margin: 0 auto;
+  padding: 3.4rem 0;
+  max-width: 1100px;
 }
-/* line 23, ../scss/_main-layout.scss */
-.card-floating:nth-child(2) {
-  background-color: #f5f5f5;
-  background-position: left bottom;
-}
-/* line 27, ../scss/_main-layout.scss */
-.card-floating:last-child {
-  margin-bottom: 0;
-}
-/* line 30, ../scss/_main-layout.scss */
-.card-floating.made-for-you {
-  background-image: url("../images/made-for-you.jpg");
-}
-/* line 33, ../scss/_main-layout.scss */
-.card-floating.high-intensity {
-  background-image: url("../images/high-intensity.jpg");
-}
-/* line 37, ../scss/_main-layout.scss */
-.card-floating.body-sculpting {
-  background-image: url("../images/body-sculpting.jpg");
-}
-@media screen and (max-width: 1000px) {
-  /* line 13, ../scss/_main-layout.scss */
-  .card-floating {
-    padding: 0;
-    max-width: 100%;
-    -moz-box-shadow: unset;
-    -webkit-box-shadow: unset;
-    box-shadow: unset;
-    background-image: unset !important;
-  }
-  /* line 46, ../scss/_main-layout.scss */
-  .card-floating .card-description {
-    padding: 3.4rem;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1024px) {
-  /* line 53, ../scss/_main-layout.scss */
-  .card-floating .card-description {
-    font-size: 0.875rem;
-  }
-}
-/* line 57, ../scss/_main-layout.scss */
-.card-floating .card-description p {
-  padding-bottom: 0.85rem;
-  text-align: justify;
-}
-/* line 60, ../scss/_main-layout.scss */
-.card-floating .card-description p:last-child {
-  padding-bottom: 0;
-}
-/* line 65, ../scss/_main-layout.scss */
-.card-floating img {
-  width: 100%;
-  height: auto;
-}
-@media screen and (min-width: 1024px) {
-  /* line 65, ../scss/_main-layout.scss */
-  .card-floating img {
-    display: none;
+@media screen and (max-width: 600px) {
+  /* line 12, ../scss/_main-layout.scss */
+  .contact-layout {
+    padding: 1.7rem 0;
   }
 }
 
@@ -279,6 +325,36 @@ a {
 /* line 16, ../scss/_button.scss */
 .button:active {
   background: #000;
+}
+
+/* line 2, ../scss/_input.scss */
+input {
+  border: 2px solid #000;
+  padding: calc(1.7rem/3 - 2px) calc(1.7rem - 2px);
+  max-width: 100%;
+  line-height: 1.7rem;
+  font-family: "Montserrat";
+  color: #000;
+}
+/* line 10, ../scss/_input.scss */
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #646464;
+}
+/* line 13, ../scss/_input.scss */
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #646464;
+}
+/* line 16, ../scss/_input.scss */
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #646464;
+}
+/* line 19, ../scss/_input.scss */
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #646464;
 }
 
 /* line 2, ../scss/_header.scss */
@@ -379,4 +455,118 @@ a {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* line 3, ../scss/_about-cards.scss */
+.card {
+  min-height: 27.2rem;
+  padding: 3.4rem;
+  margin-bottom: 6.8rem;
+  -moz-box-shadow: 0px 3px 6px 3px #f5f5f5;
+  -webkit-box-shadow: 0px 3px 6px 3px #f5f5f5;
+  box-shadow: 0px 3px 6px 3px #f5f5f5;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+/* line 13, ../scss/_about-cards.scss */
+.card:nth-child(2) {
+  background-color: #f5f5f5;
+  background-position: left bottom;
+}
+/* line 17, ../scss/_about-cards.scss */
+.card:last-child {
+  margin-bottom: 0;
+}
+/* line 20, ../scss/_about-cards.scss */
+.card.made-for-you {
+  background-image: url("../images/made-for-you.jpg");
+}
+/* line 23, ../scss/_about-cards.scss */
+.card.high-intensity {
+  background-image: url("../images/high-intensity.jpg");
+}
+/* line 27, ../scss/_about-cards.scss */
+.card.body-sculpting {
+  background-image: url("../images/body-sculpting.jpg");
+}
+@media screen and (max-width: 1000px) {
+  /* line 3, ../scss/_about-cards.scss */
+  .card {
+    padding: 0;
+    max-width: 100%;
+    -moz-box-shadow: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    background-image: unset !important;
+  }
+  /* line 36, ../scss/_about-cards.scss */
+  .card .card-description {
+    padding: 3.4rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  /* line 43, ../scss/_about-cards.scss */
+  .card .card-description {
+    font-size: 0.875rem;
+  }
+}
+/* line 47, ../scss/_about-cards.scss */
+.card .card-description p {
+  padding-bottom: 0.85rem;
+  text-align: justify;
+}
+/* line 50, ../scss/_about-cards.scss */
+.card .card-description p:last-child {
+  padding-bottom: 0;
+}
+/* line 55, ../scss/_about-cards.scss */
+.card img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  /* line 55, ../scss/_about-cards.scss */
+  .card img {
+    display: none;
+  }
+}
+
+/* line 3, ../scss/_contact.scss */
+.contact {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 600px) {
+  /* line 3, ../scss/_contact.scss */
+  .contact {
+    padding: 0 1.7rem;
+  }
+}
+/* line 8, ../scss/_contact.scss */
+.contact .address {
+  font-size: 0.929rem;
+}
+/* line 11, ../scss/_contact.scss */
+.contact .input-newsletter {
+  display: block;
+}
+/* line 16, ../scss/_contact.scss */
+.contact .social-media-list .social-media-button {
+  display: inline-block;
+  height: 3.4rem;
+  width: 3.4rem;
+  overflow: hidden;
+}
+/* line 21, ../scss/_contact.scss */
+.contact .social-media-list .social-media-button img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+/* line 29, ../scss/_contact.scss */
+.copyright {
+  font-size: 0.857rem;
+  padding: 1.7rem 0;
 }
