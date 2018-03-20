@@ -2,7 +2,8 @@
 
 .contact {
 	background-color: $grey-light;
-	@media screen and (max-width: $s-screen) {
+
+	@media screen and (max-width: $m-screen) {
 		padding: 0  $lh;
 	}
 	.address { 

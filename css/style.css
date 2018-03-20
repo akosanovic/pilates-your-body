@@ -24,7 +24,7 @@
   margin-left: -0.85rem;
   margin-right: -0.85rem;
 }
-@media screen and (max-width: 1001px) {
+@media screen and (max-width: 1024px) {
   /* line 2, ../scss/_grid.scss */
   .row {
     margin-left: 0;
@@ -32,7 +32,7 @@
   }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1024px) {
   /* line 14, ../scss/_grid.scss */
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5,
   .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10 {
@@ -490,7 +490,7 @@ input:-moz-placeholder {
 .card.body-sculpting {
   background-image: url("../images/body-sculpting.jpg");
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1023px) {
   /* line 3, ../scss/_about-cards.scss */
   .card {
     padding: 0;
@@ -506,7 +506,7 @@ input:-moz-placeholder {
     text-align: center;
   }
 }
-@media screen and (min-width: 1000px) and (max-width: 1024px) {
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
   /* line 43, ../scss/_about-cards.scss */
   .card .card-description {
     font-size: 0.875rem;
@@ -537,35 +537,35 @@ input:-moz-placeholder {
 .contact {
   background-color: #f5f5f5;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1023px) {
   /* line 3, ../scss/_contact.scss */
   .contact {
     padding: 0 1.7rem;
   }
 }
-/* line 8, ../scss/_contact.scss */
+/* line 9, ../scss/_contact.scss */
 .contact .address {
   font-size: 0.929rem;
 }
-/* line 11, ../scss/_contact.scss */
+/* line 12, ../scss/_contact.scss */
 .contact .input-newsletter {
   display: block;
 }
-/* line 16, ../scss/_contact.scss */
+/* line 17, ../scss/_contact.scss */
 .contact .social-media-list .social-media-button {
   display: inline-block;
   height: 3.4rem;
   width: 3.4rem;
   overflow: hidden;
 }
-/* line 21, ../scss/_contact.scss */
+/* line 22, ../scss/_contact.scss */
 .contact .social-media-list .social-media-button img {
   display: block;
   height: 100%;
   width: auto;
 }
 
-/* line 29, ../scss/_contact.scss */
+/* line 30, ../scss/_contact.scss */
 .copyright {
   font-size: 0.857rem;
   padding: 1.7rem 0;
