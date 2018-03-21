@@ -9,11 +9,15 @@
 	padding: $lh*2 0;
 	max-width: 1100px;
 }
-.contact-layout{ 
+.footer-layout { 
 	margin: 0 auto;
 	padding: $lh*2 0;
 	max-width: 1100px;
 	@media screen and (max-width: $s-screen) {
 		padding: $lh 0;
+	}
+	.contact-section,
+	.social-section {
+		display: inline-block;
 	}
 }

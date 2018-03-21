@@ -13,8 +13,8 @@
 	
 
 	@media screen and (max-width: $s-screen) {
-		padding-top: $lh/2;
 		text-align: center;
+		padding: 0;
 	}
 	.logo {
 		margin: 0 auto; 
@@ -28,18 +28,9 @@
 			width: auto;
 		}
 		@media screen and (max-width: $s-screen) {
-			position: relative;
 			display: inline-block;
-			@include transition(all 1s linear);
-
-			height: auto;
-			overflow: visible;
-			img {
-				position: absolute;
-				top: 100%;
-				@include transform(translateY(-50%));
-				height: $lh*3;
-			}
+			padding: $lh/2;
+			vertical-align: middle;
 		}
 	}
 }
